@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.container {
+    text-align: center;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.alegre {
+    animation-name: moverPersonagem;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes trocarPersonagem {
+    0% {
+        transform: translate(0px);
+    }
+    50% {
+        transform: translate(50px);
+    }
+    100% {
+        transform: translate(0px);
+    }
+}
