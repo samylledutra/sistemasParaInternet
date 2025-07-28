@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Press Start 2P', cursive;
+}
+body {
+  background-image: url('../img/OIG.Calculator\ \(4\).jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  color: rgb(255, 238, 61);
+  text-shadow: 4px 4px black;
+  padding: 20px 0;
+  margin: 0;
+  font-size: 36px;
+}
+.login{
+  margin: 0 auto; 
+  text-align: center;
+  width: 600px;
+ background-color: rgba(39, 54, 109, 0.8);
+}
+.login, form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  width: 350px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid rgb(255, 255, 118);
+  border-radius: 10px;
+  font-size: 18px;
+  color: #333;
+ 
+}
+
+input[type="button"] {
+margin: 10px;
+  padding: 10px;
+  background-color: rgb(134, 199, 198);
+  color: yellow;
+  text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 18px;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+  animation: bounce 1s infinite;
+}
+
+input[type="button"]:hover {
+  background-color: #5ca9b5;
+  animation: none;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+a {
+  text-decoration: none;
+  color: yellow;
+  text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+ margin-bottom: 20px;
+  transition: all .3s;
+}
+a:hover{
+  color: #5ca9b5;
+  
+}
+
+@media screen and (max-width: 600px) {
+  .login, form {
+    width: 350px;
+  }
+
+}

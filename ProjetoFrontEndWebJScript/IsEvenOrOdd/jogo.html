@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/OIG.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/jogo.css">
+    <title>É par?</title>
+</head>
+
+<body>
+    <div id="game-container">
+
+        <div id="game-header">
+            <div id="difficulty-select">
+                <label for="difficulty-options" id="difficulty-label">Nível:</label>
+                <select id="difficulty-options">
+                    <option value="default">Selecione o nível</option>
+                    <option value="easy">Fácil</option>
+                    <option value="medium">Médio</option>
+                    <option value="hard">Difícil</option>
+                </select>
+            </div>
+
+            <div id="timer">
+                <div>
+                    <span id="min">00</span>
+                    <span>:</span>
+                    <span id="sec">00</span>
+                </div>
+            </div>
+            <div id="game-controls">
+                <button id="start-button" class="btnPlay">Iniciar</button>
+                <button id="pause-button" class="btnPause">Pausar</button>
+                <button id="stop-button" class="btnStop">Parar</button>
+                <button id="exit-button" class="btnExit">Sair</button>
+            </div>
+        </div>
+    </div>
+    <div id="number-display"></div>
+
+    <audio id="gameSound" controls>
+        <source id="music" type="audio/mpeg">
+    </audio>
+
+    <script src="js/jAlertWifi.js"></script>
+    <script src="js/audio.js"></script>
+    <script src="js/jogo.js"></script>
+
+    <footer class="footer">
+        <div id="result-stats">
+            <div>Acertos: <span id="correct-count">0</span>
+    
+                (<span id="accuracy">0%</span>)
+            </div>
+            <div>Erros: <span id="error-count">0</span></div>
+            <div>Números pares sorteados: <span id="even-numbers">0</span></div>
+        </div>
+    </footer>
+</body>
+
+</html>

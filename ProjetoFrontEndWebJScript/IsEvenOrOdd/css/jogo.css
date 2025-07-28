@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Press Start 2P', cursive;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/OIG.Calculator\ \(4\).jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  h1 {
+    color: rgb(255, 238, 61);
+    text-shadow: 4px 4px black;
+    padding: 10px 0;
+    margin: 0;
+    font-size: 25px;
+  }
+
+#game-container {
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#game-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#difficulty-select {
+    text-align: left;
+}
+
+#difficulty-label {
+    font-size: 25px;
+    color: yellow;
+}
+
+#time-label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: yellow;
+}
+
+#difficulty-options {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    
+}
+
+#difficulty-options li {
+    margin-bottom: 5px;
+    cursor: pointer;
+   
+}
+
+#timer {
+    font-size: 25px;
+    color: white;
+}
+
+#game-controls {
+    font-size: 25px;  
+}
+#game-controls button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+#start-button,
+#pause-button,
+#stop-button,
+#exit-button {
+    padding: 10px;
+    background-color: #653F7C;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#start-button:hover,
+#pause-button:hover,
+#stop-button:hover,
+#exit-button:hover {
+    background-color: gray;
+}
+
+#number-display {
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 10px 10px 10px rgb(255, 238, 61);
+    font-size: 200px;
+    text-align: center;
+    margin:auto;
+    cursor: pointer;
+}
+
+#result-stats {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+.footer {
+    width: 100%;
+    background-color: black;
+    color: yellow;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+    text-align: center;
+    margin:auto;
+}
+
+
+#difficulty-options {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #FFFFA8;
+    width: 150px;
+}
+
+#difficulty-options option {
+    background-color: #fff;
+    color: #333;
+    font-weight: normal;
+}
+.shakeNumber {
+    animation-name: shakeNumber;
+    animation-duration: 0.15s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shakeNumber {
+    0% {
+        transform: rotate(-15deg);
+    }
+    25% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+    75% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-15deg);
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    #game-container > div {
+        width: 100%;
+        display: inline-block;
+        margin: 0;
+        padding: 5px;
+    
+    }
+    #game-header > div {
+        
+        display: inline-block;
+    
+    }
+    #game-controls button {
+        font-size: 10px;
+        width: 100px;
+        margin: 5px;
+    }
+
+    #game-controls > div {
+        padding: 5px;
+    }
+    #timer { 
+        font-size: 12px;
+        text-align: center;
+        margin: 5px;
+    
+    }
+
+    #number-display {
+        font-size: 120px;
+        padding-bottom: 50px; 
+        
+    }
+    
+    #difficulty-label {
+        padding: 0;
+        font-size: 10px; 
+    }
+
+    #difficulty-options option {
+        font-size: 8px; 
+    }
+
+    #difficulty-options {
+        font-size: 10px; 
+    }
+    #difficulty-select {
+        margin-bottom: 10px;
+    }
+    #result-stats > div{
+        margin: 5px;
+        text-align: center;
+        font-size: 10px;
+        margin: 0;
+        padding: 0; 
+        
+    }
+   
+}
+
