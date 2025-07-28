@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin: 15px 5px;
+}
+
+fieldset {
+	width: 400px;
+	margin:auto;
+	border:2px solid green;
+}
+legend {
+	text-align: center;
+	padding: 10px;
+}
+button {
+	display:block;
+	width: 50%;
+	margin:auto;     
+	margin-top: 20px;
+	background-color: green;
+	color: white;
+	border:none;
+	outline: none;
+	padding: 5px;
+	border-radius: 5px;
+	cursor:pointer;
+}
+input[type="text"] {
+	width:70%;
+	border:none;
+	border-bottom:2px solid green;
+	outline:none;
+}
+fieldset {
+    border: 3px solid green;
+    padding:30px;
+    width:450px;
+    color: green;
+    margin:auto;
+}
+ 
+legend {
+    text-align: center;
+    font-size: 20px;
+}     
+
+button{
+    background-color: green;
+    color:white;
+    border:none;
+    outline: none;
+    padding:10px;
+    display: block;
+    width:50%;
+    margin:auto;    
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+fieldset input[type="text"] {
+    border:none;
+    border-bottom: 2px solid green;
+    width:70%;
+    outline: none;
+    color: green;
+}
+button:hover {
+    background-color: red;
+}
+
+#convidadoButton {
+    width: 450px;
+    padding: 10px;
+}
+#gerarNumeroButton, #numeroSorte{
+    width: 200px;
+    color: white;
+    background-color: rgb(187, 0, 0);
+    border-radius: 15px;
+  padding: 5px;
+  margin: 4px;
+}
+
+#mensagemBemVindo{
+    font-size: 45px;
+    color: green;
+    padding: 10px;
+}
+.containerFelino {
+    width: 770px;
+    margin: auto;
+}
+
+.containerFelino img {
+    width: 100px;
+    margin: 0 10px;
+}
+
+.containerFelino p {
+    text-align: center;
+}
+
+.boxInterna {
+	width: 150px;
+	float:left;
+	text-align:center;
+}
+
+.boxInterna button {
+	width: 150px;
+}
+#numeroSorte{
+    background-color: white;
+    border: 1px solid black;
+}
