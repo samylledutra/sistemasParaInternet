@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&family=Roboto:ital@1&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(253, 220, 248));
+    font-family: 'Roboto', sans-serif;
+}
+
+header nav {
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(255, 136, 231));
+    color: #fff;
+    font-size: 20px;
+}
+
+header ul {
+    list-style: none;
+    margin: auto;
+    width: 1200px;
+}
+
+header li {
+    list-style-type: none;
+    text-align: left;
+    display: inline-block;
+    padding: 20px 5px;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 5px;
+
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(255, 160, 236));
+    padding: 20px 20px;
+
+}
+
+.logo img {
+    width: 100%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 1200px;
+    padding: 20px;
+    margin-bottom: 20px;
+
+    text-align: center;
+    font-size: 18px;
+
+}
+
+h1 {
+    font-size: 24px;
+    color: rgb(184, 0, 61);
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    color: rgb(184, 0, 61);
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    font-size: 22px;
+    color: rgb(184, 0, 61);
+    padding: 10px;
+}
+
+p {
+    font-size: 18px;
+}
+
+a {
+    cursor: pointer;
+}
+
+.apresentacao p {
+    font-size: 18px;
+    line-height: 1.5em;
+}
+
+
+
+.apresentacao h1,
+p {
+    padding: 10px;
+}
+
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+}
+
+.apresentacao {
+    text-align: center;
+}
+
+.cupcake img {
+    width: 200px;
+}
+
+.cupcake img:hover {
+    transform: scale(1.1);
+}
+
+.cupcake img {
+    transition: all 0.5s;
+    margin: 15px 0px;
+}
+
+.cupcake {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding: 30px 5px;
+    text-align: center;
+}
+
+.cupcake>div {
+    padding: 20px;
+}
+
+.cupcake p {
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+.sabores {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding: 30px 5px;
+    text-align: center;
+}
+
+.sabores p {
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+.sabores>div {
+    padding: 20px;
+}
+
+.sabores img {
+    width: 200px;
+    margin: 0px 100px;
+}
+
+.socialmedia {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding: 30px 5px;
+    text-align: center;
+    align-items: center;
+}
+
+.socialmedia>div {
+    padding: 50px;
+}
+
+.socialmedia img {
+    width: 35px;
+    margin: 0 5px;
+}
+
+.contato a {
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(138, 0, 46);
+
+}
+
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form h3 {
+    color: rgb(184, 0, 61)
+}
+
+form input,
+form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #96214e;
+    border-radius: 4px;
+
+}
+
+form button {
+    padding: 8px 20px;
+    background-color: rgb(184, 0, 61);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #b64261;
+}
+
+
+.tradicionais h3,
+.temporada h3,
+.especiais h3,
+.personalizados h3 {
+    color: rgb(226, 39, 101);
+
+}
+
+.tradicionais,
+.temporada,
+.especiais {
+    background-color: #ffeef8;
+    margin-bottom: 0;
+}
+
+.personalizados {
+    background-color: #ffeef8;
+    margin-top: 0;
+}
+
+.sobre {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 30px 10px;
+    text-align: justify;
+    align-items: center;
+
+}
+
+.sobre div {
+    padding: 20px;
+}
+
+.sobre img {
+    width: 400px;
+}
+
+.equipe {
+    text-align: justify;
+}
+
+.aboutUs {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 30px 5px;
+
+}
+
+.aboutUs>div {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.aboutUs img {
+    width: 350px;
+    margin: 0px 20px;
+}
+
+.aboutUs img:hover {
+    box-shadow: -4px 9px 16px 3px rgb(255, 205, 255);
+}
+
+.contatoSecao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 20px;
+}
+
+.contatoSecao>div {
+    width: 100%;
+
+}
+
+.nossoContato img {
+    width: 150px;
+}
+
+.horario li {
+    list-style: none;
+    margin: 5px 0px;
+}
+
+.horario ul {
+    margin: 10px 0px;
+}
+
+footer p {
+    font-size: 20px;
+}
+
+footer {
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(255, 136, 231));
+    text-align: center;
+    color: black;
+    margin: auto;
+    padding: 30px;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    header ul,
+    section,
+    .aboutUs>div,
+    .cupcake,
+    .sabores,
+    .socialmedia,
+    .contatoSecao,
+    footer {
+        width: 100%;
+        max-width: 600px;
+        margin: auto;
+    }
+
+    header ul {
+        justify-content: right;
+        margin: auto;
+        list-style: none;
+        font-size: 10px;
+
+    }
+
+
+    header ul li {
+        padding: 20px 0px;
+
+    }
+
+    nav a:active {
+        color: rgb(255, 136, 231);
+    }
+
+    .apresentacao p {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .cupcake,
+    .sabores,
+    .socialmedia,
+    .contatoSecao {
+        flex-direction: column;
+    }
+
+    .socialmedia p {
+        text-align: center;
+    }
+
+    .cupcake>div,
+    .sabores>div,
+    .socialmedia>div,
+    .contatoSecao>div {
+        padding: 10px;
+    }
+
+    .sabores img {
+        margin: 0;
+    }
+
+    .aboutUs>div {
+        flex-direction: column;
+        padding: 10px 5px;
+    }
+
+    .aboutUs {
+        padding: 0;
+    }
+
+    .aboutUs img {
+        padding: 5px 5px;
+        margin: auto;
+
+    }
+
+    .sobre {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .sobre img {
+        width: 230px;
+
+    }
+
+    .horario p {
+        text-align: center;
+    }
+
+    footer p {
+        text-align: center;
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    header ul,
+    section,
+    .aboutUs>div,
+    .cupcake,
+    .sabores,
+    .socialmedia,
+    .contatoSecao,
+    footer {
+        width: 100%;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .apresentacao p {
+        text-align: center;
+    }
+
+    .sabores {
+        align-items: center;
+    }
+
+    .sabores img {
+        margin: 0;
+        padding: 15px 5px;
+    }
+
+    .cupcake {
+        margin: auto;
+        padding: 15px;
+    }
+
+    .cupcake img {
+        width: 150px;
+       
+    }
+
+    .cupcake h3 {
+        font-size: 20px;
+    }
+
+    .aboutUs {
+        padding: 0;
+       
+    }
+
+    .aboutUs img {
+        width: 170px;
+       
+    }
+
+    .sobre {
+        padding: 0;
+    }
+
+    .sobre {
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .sobre img {
+        padding: 15px 0px;
+    }
+
+    p {
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .socialmedia p {
+        text-align: center;
+    }
+
+    .cupcake>div,
+    .sabores>div,
+    .socialmedia>div,
+    .sobre>div {
+        padding: 0px;
+    }
+
+    .sabores>div,
+    .contatoSecao>div {
+        padding: 30px 15px;
+    }
+
+    .horario p {
+        text-align: center;
+    }
+
+    footer p {
+        text-align: center;
+    }
+}
